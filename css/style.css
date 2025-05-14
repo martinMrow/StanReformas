@@ -54,7 +54,7 @@ a, a:hover, a:active {
 body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
     color: #888888;
     margin: 0;
@@ -684,8 +684,9 @@ background-position-y: 70px;
 }
 .points{ 
 	margin-bottom: 10px;
-	font-size:14px;
+	font-size:18px;
 	padding-left:0px;
+    color: #000;
 }
 .about-us p{
 	/*font-size: 0.9375em;*/
@@ -1697,6 +1698,11 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 59%;
 background-position-y: 150px;
+.p{font-size: 18px;
+}
+.points{
+    font-size: 18px;
+}
 }
 }
 @media (max-width: 768px) {
@@ -1707,10 +1713,13 @@ text-align: center;
 }
 .aboutUs-container{
 	background-image:none;
-}
+
 p{
-font-size:14px;
+font-size:13px;
 }
+.points{
+    font-size: 13px;
+}}
 .top_cont_outer { 
 height: 335px;
 }
