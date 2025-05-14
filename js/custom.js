@@ -57,6 +57,37 @@ $(document).ready(function() {
 
     var container = $('#portfolio_wrapper');
 
+    const toggleBtn = document.getElementById('toggle-reviews');
+    const allReviews = document.querySelectorAll('.review-card');
+    const initialVisible = 8; // 2 filas en desktop (4x2)
+  
+    // Oculta todas las reviews excepto las iniciales
+    allReviews.forEach((review, index) => {
+      if (index >= initialVisible) {
+        review.classList.add('hidden');
+      }
+    });
+  
+    // Alternar entre mostrar todas/ocultar
+    toggleBtn.addEventListener('click', function() {
+      const hiddenReviews = document.querySelectorAll('.review-card.hidden');
+  
+      if (hiddenReviews.length > 0) {
+        // Mostrar todas
+        hiddenReviews.forEach(review => review.classList.remove('hidden'));
+        toggleBtn.textContent = 'Mostrar menos';
+        toggleBtn.classList.add('active');
+      } else {
+        // Ocultar las que no son iniciales
+        allReviews.forEach((review, index) => {
+          if (index >= initialVisible) {
+            review.classList.add('hidden');
+          }
+        });
+        toggleBtn.textContent = 'Ver más reseñas';
+        toggleBtn.classList.remove('active');
+      }
+    });
 
     container.isotope({
         animationEngine: 'best-available',

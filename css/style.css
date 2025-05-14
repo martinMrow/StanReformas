@@ -106,8 +106,7 @@ p {
 
 .logo {
     float: left;
-    margin-top: 8px;
-    width: 150px;
+    width: 50px;
 	position: relative;
 	z-index: 2;
 }
@@ -609,11 +608,8 @@ img {
 
 /* Happy Clients
 ---------------------------------*/
-
-
-
-#clients {
-    padding: 60px 0px;
+#telf{
+    color: #EFB21D;
 }
 
 .client_area {
@@ -663,32 +659,8 @@ img {
     color: #888888;
 }
 
-/* Clients
----------------------------------*/
 
 
-.client_logos {
-    background: #EFB21D;
-    padding: 60px 0;
-    margin-top: 60px;
-}
-
-.client_logos ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.client_logos ul li {
-    display: inline;
-    margin: 0 25px;
-}
-
-.client_logos ul a {
-    display: inline-block;
-    margin: 0 20px;
-}
 
 .page_section.team {
     padding: 60px 0;
@@ -1816,12 +1788,7 @@ padding: 40px 0;
  #clients {
 padding: 40px 0;
 }
-.client_logos ul li {
-display: inline;
-margin: 0 25px;
-padding: 11px 0;
-display: inline-block;
-}
+
 .social_links li {
 float: left; 
 }
@@ -1877,5 +1844,52 @@ width: 99%;
 @media (max-width: 768px) {
     .reviews-grid {
       grid-template-columns: 1fr;
+    }
+  }
+  /* Oculta las reviews con clase .hidden */
+.review-card.hidden {
+  display: none;
+}
+
+/* Estilo del botón */
+.load-more-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: #000; /* Amarillo */
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.load-more-btn:hover {
+    color: #FFC000;
+  background-color: #ffffff; /* Amarillo oscuro */
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+
+}
+.reviews-grid {
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 por fila */
+  }
+  
+  @media (max-width: 1024px) {
+    .reviews-grid {
+      grid-template-columns: repeat(2, 1fr); /* Tablet: 2 por fila */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .reviews-grid {
+      grid-template-columns: 1fr; /* Móvil: 1 por fila */
+    }
+    .load-more-btn {
+      width: 80%;
     }
   }
