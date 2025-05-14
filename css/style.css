@@ -204,6 +204,49 @@ p {
 .mrgTop {
     margin-top: 30px;
 }
+/*reviews
+---------------------------*/
+/* Contenedor de reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 por fila */
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Tarjeta de review */
+  .review-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  /* Estrellas */
+  .stars {
+    color: #FFD700; /* Amarillo */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    display: inline-block;
+  }
+  
+  /* Texto y nombre */
+  .review-text {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .client-name {
+    color: #FFD700; /* Amarillo */
+    font-weight: bold;
+    margin-top: 10px;
+  }
 /* Top_content
 ---------------------------------*/
 
@@ -1831,3 +1874,8 @@ text-align: left;
 width: 99%;
 }
 }
+@media (max-width: 768px) {
+    .reviews-grid {
+      grid-template-columns: 1fr;
+    }
+  }
