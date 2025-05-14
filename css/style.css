@@ -107,6 +107,7 @@ p {
 .logo {
     float: left;
     margin-top: 8px;
+    width: 150px;
 	position: relative;
 	z-index: 2;
 }
