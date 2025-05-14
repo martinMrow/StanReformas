@@ -148,7 +148,7 @@ p {
 }
 
 .navStyle ul li:first-child {
-	/*margin:0px;*/;
+	/*margin:0px;*/
 }
 
 .navStyle ul li:last-child {
@@ -416,7 +416,7 @@ margin: 35px 0 15px;
 }
 
 .service-list-col1 i {
-    display:;
+    display: none;
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -1760,7 +1760,7 @@ margin: 0 18px;
 .page_section.team{
 padding: 40px 0;
 }
-, #clients {
+ #clients {
 padding: 40px 0;
 }
 .client_logos ul li {
