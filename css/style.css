@@ -147,10 +147,6 @@ p {
     margin: 0 5px;
 }
 
-.navStyle ul li:first-child {
-	/*margin:0px;*/
-}
-
 .navStyle ul li:last-child {
     margin: 0 0 0 23px;
 }
@@ -326,9 +322,6 @@ a.read_more:hover {
 }
 .service_wrapper {
     padding: 40px 0 40px;
-}
-
-.service_section {
 }
 
 .service_block {
@@ -1641,7 +1634,6 @@ div.mc-image {
     bottom: 40px;
     padding: 10px 20px;
     text-indent: 0px;
-    moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
     z-index: 1000;
