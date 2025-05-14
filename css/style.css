@@ -210,13 +210,13 @@ p {
 .top_cont_outer {
     background: #EFB21D;
     position: relative;
-	background:url(../img/slide-1.jpg) top center no-repeat;
-	height:650px;
+	background:url(../img/aa.jpg) top center;
+
 }
 
 .hero_section {
     position: relative;
-    padding-top: 100px;
+    
 }
 
 .white_pad {
@@ -232,7 +232,8 @@ p {
 }
 
 .top_left_cont {
-    padding: 110px 0;
+    padding: 180px 0;
+    vertical-align: middle;
 }
 
 .top_left_cont h3 {
